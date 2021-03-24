@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="30dp"
+    tools:context=".Activity.Activity.RegisterActivity">
+
+    <ImageView
+        android:layout_width="152dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/ic_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/inter_medium"
+        android:lineHeight="28sp"
+        android:text="Daftar"
+        android:textColor="@color/black_87"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@string/daftar"
+        android:textColor="@color/black_54"
+        android:textSize="14sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_hp_register"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor HP"
+        app:boxBackgroundMode="outline"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inter_regular"
+            android:inputType="number"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_nama_register"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+        app:boxBackgroundMode="outline"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inter_regular"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_email_register"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:hint="Email"
+        app:boxBackgroundMode="outline"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inter_regular"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/button_filled"
+        android:textColor="@drawable/button_filled_text_color"
+        android:text="Daftar"
+        android:textAllCaps="false"
+        android:enabled="true"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="Sudah punya akun?"
+            android:textColor="@color/black_87"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:text="Masuk"
+            android:id="@+id/tv_masuk"
+            android:textColor="@color/info"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
