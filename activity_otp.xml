@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Activity.OtpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="30dp">
+
+        <ImageView
+            android:layout_width="152dp"
+            android:layout_height="33dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/ic_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/inter_medium"
+            android:lineHeight="28sp"
+            android:text="Kode OTP"
+            android:textColor="@color/black_87"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/otp"
+            android:textColor="@color/black_54"
+            android:textSize="14sp" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/pv_otp"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/inter_medium"
+            android:inputType="number"
+            android:textColor="@color/blue_80"
+            android:textSize="24sp"
+            app:itemCount="6"
+            app:itemHeight="40dp"
+            app:itemRadius="4dp"
+            app:itemWidth="40dp"
+            app:lineColor="@color/black_20" />
+
+        <TextView
+            android:id="@+id/tv_countdown_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/blue_primary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_kirim_ulang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="Kirim ulang"
+            android:textColor="@color/accent"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_lanjut_otp"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_filled"
+            android:enabled="true"
+            android:text="Lanjut"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_filled_text_color" />
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/snackbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
