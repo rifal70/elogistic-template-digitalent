@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ELogisticMaritime</string>
+    <string name="daftar">Daftarkan akun Anda untuk bisa masuk kedalam aplikasi Smart Logistic.</string>
+    <string name="masuk">Masuk dengan Nomor HP Anda setelah mendaftarkan akun di aplikasi ini.</string>
+    <string name="otp">Masukkan kode OTP yang telah kami kirim ke Nomor HP %s</string>
+    <string name="snackbar_otp">Kode OTP yang dimasukkan salah, silahkan kirim ulang kode OTP.</string>
+    <string name="waktu_berangkat">Waktu Berangkat: %s</string>
+    <string name="estimasi_sampai">Estimasi Sampai: %s</string>
+    <string name="tutup">Tutup: %s</string>
+    <string name="kontak">Jika ada yang ingin ditanyakan, silahkan hubungi call center kami di bawah ini:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
