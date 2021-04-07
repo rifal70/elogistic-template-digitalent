@@ -6,6 +6,19 @@
     android:orientation="vertical"
     tools:context=".Activity.Fragment.RiwayatFragment">
 
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:textSize="18sp"
+            android:textColor="@color/black_87"
+            android:text="Riwayat"/>
+    </androidx.appcompat.widget.Toolbar>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,120 +27,38 @@
         android:orientation="horizontal"
         android:paddingHorizontal="16dp">
 
-        <LinearLayout
-            android:id="@+id/ll_riwayat_waiting"
+        <ImageView
+            android:id="@+id/iv_menunggu_pembayaran"
             android:layout_width="82dp"
             android:layout_height="82dp"
-            android:orientation="vertical">
+            android:background="@drawable/ic_menunggu_pembayaran"
+            android:backgroundTint="@drawable/card_selected"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/ic_waiting_order" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/inter_regular"
-                android:gravity="center_horizontal"
-                android:text="Menunggu Pembayaran"
-                android:textAlignment="center"
-                android:textSize="8sp" />
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/ll_riwayat_process"
+        <ImageView
+            android:id="@+id/iv_diproses"
             android:layout_width="82dp"
             android:layout_height="82dp"
-            android:orientation="vertical">
+            android:background="@drawable/ic_diproses"
+            android:backgroundTint="@drawable/card_selected"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/ic_process" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="13dp"
-                android:fontFamily="@font/inter_regular"
-                android:text="Diproses"
-                android:textAlignment="center"
-                android:textSize="8sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/ll_riwayat_sending"
+        <ImageView
+            android:id="@+id/iv_dikirim"
             android:layout_width="82dp"
             android:layout_height="82dp"
-            android:orientation="vertical">
+            android:background="@drawable/ic_dikirim"
+            android:backgroundTint="@drawable/card_selected"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/ic_sending" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="13dp"
-                android:fontFamily="@font/inter_regular"
-                android:text="Dikirim"
-                android:textAlignment="center"
-                android:textSize="8sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/ll_riwayat_arrived"
+        <ImageView
+            android:id="@+id/iv_sampai_tujuan"
             android:layout_width="82dp"
             android:layout_height="82dp"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/ic_arrived" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="13dp"
-                android:fontFamily="@font/inter_regular"
-                android:text="Sampai Tujuan"
-                android:textAlignment="center"
-                android:textSize="8sp" />
-
-        </LinearLayout>
+            android:background="@drawable/ic_sampai_tujuan"
+            android:backgroundTint="@drawable/card_selected"/>
 
     </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/inter_semibold"
-        android:text="Hari ini"
-        android:textColor="@color/black_87"
-        android:textSize="14sp" />
+
 
     <FrameLayout
-        android:layout_marginTop="8dp"
         android:id="@+id/screen_riwayat"
         android:layout_width="match_parent"
         android:layout_height="0dp"

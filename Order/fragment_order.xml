@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Fragment.OrderFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Pesanan"
+            android:textColor="@color/black_87"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_personal"
+                android:layout_width="120dp"
+                android:layout_height="28dp"
+                android:background="@drawable/button_selected"
+                android:fontFamily="@font/inter_bold"
+                android:text="Personal"
+                android:textAllCaps="false"
+                android:textColor="@drawable/button_selected_text_color"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_kolaborasi"
+                android:layout_width="120dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/button_selected"
+                android:fontFamily="@font/inter_bold"
+                android:text="Kolaborasi"
+                android:textAllCaps="false"
+                android:textColor="@drawable/button_selected_text_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:background="@drawable/custom_layout_kontak"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/ll_pelabuhan_pengirim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8.8dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Pelabuhan pengirim"
+                    android:textColor="@color/black_54"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Pelabuhan Merak"
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/black_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pelabuhan_penerima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_pelabuhan_pengirim"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8.8dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Pelabuhan penerima"
+                    android:textColor="@color/black_54"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Pelabuhan Kalimas"
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/black_10" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_tanggal_loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_pelabuhan_penerima"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_tl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8.8dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Tanggal loading"
+                    android:textColor="@color/black_54"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_tanggal_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_tl"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="09/03/2021"
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/tv_tanggal_loading"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/black_10" />
+
+                <ImageView
+                    android:id="@+id/iv_date_picker"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/ic_date_picker"
+                    android:backgroundTint="@color/blue_primary" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_above="@+id/ll_pelabuhan_penerima"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="-20dp"
+                android:background="@drawable/ic_up_and_down"
+                android:backgroundTint="@color/blue_primary" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_below="@id/rl_tanggal_loading"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button_filled"
+                android:fontFamily="@font/inter_bold"
+                android:text="Pesan"
+                android:textAllCaps="false"
+                android:textColor="@drawable/button_filled_text_color"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

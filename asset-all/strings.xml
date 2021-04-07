@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ELogisticMaritime</string>
+    <string name="daftar">Daftarkan akun Anda untuk bisa masuk kedalam aplikasi Smart Logistic.</string>
+    <string name="masuk">Masuk dengan Nomor HP Anda setelah mendaftarkan akun di aplikasi ini.</string>
+    <string name="otp">Masukkan kode OTP yang telah kami kirim ke Nomor HP %s</string>
+    <string name="snackbar_otp">Kode OTP yang dimasukkan salah, silahkan kirim ulang kode OTP.</string>
+    <string name="waktu_berangkat">Waktu Berangkat: %s</string>
+    <string name="estimasi_sampai">Estimasi Sampai: %s</string>
+    <string name="tutup">Tutup: %s</string>
+    <string name="kontak">Jika ada yang ingin ditanyakan, silahkan hubungi call center kami di bawah ini:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tooltip_1">Cari pesanan Anda dengan masukkan 10 digit nomor pesanan.</string>
+    <string name="tooltip_2">Jika Anda ingin mengecek tarif pengiriman bisa langsung cek disini.</string>
+    <string name="tooltip_3">Anda bisa melihat jadwal kontainer di semua pelabuhan Seluruh Indonesia</string>
+    <string name="smart_logistic">Solusi untuk pengiriman dan penerimaan jasa ke Seluruh Indonesia melalui jalur laut dari pelabuhan ke pelabuhan.</string>
+    <string name="empty_state">Maaf belum ada catatan transaksi \n silakan lakukan pesanan</string>
+    <string name="full_container">Rp. %s Full Container</string>
+    <string name="less_container">Rp. %s Less Container</string>
+</resources>
